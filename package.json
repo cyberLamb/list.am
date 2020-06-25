@@ -1,0 +1,17 @@
+{
+  "name": "listam",
+  "version": "1.0.0",
+  "description": "A list.am prototype for learing",
+  "main": "assets/sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url assets/sass/mystyles.scss assets/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Sus",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1"
+  }
+}

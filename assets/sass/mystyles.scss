@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$blue: #0c72ea;
+
+
+// Update Bulma's global variables
+$body-color: #fff;
+$body-font-size: 0.875em ;
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $blue;
+$link: $pink;
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+$bdy-bcgrnd-clr: #f7f7f7;
+$input-background-color: #f0f0f0;
+$input-hover-border-color: none;
+$input-focus-border-color: #D3ECF7;
+$input-focus-box-shadow-color:none;
+$input-icon-color: hsl(0, 0%, 86%);
+$input-color: #ABABAB;
+$family-sans-serif: Nunito, sans-serif;
+
+
+
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter, $bdy-bcgrnd-clr;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$footer-background-color: #fafafa;
+$input-placeholder-color:rgba(51,3,0,.5);
+
+
+@import "../../node_modules/bulma/bulma";
+
+.lt-box-shadow {
+  box-shadow: 0 1px 6px 1px rgba(0,0,0,0.06);
+}
+.lt-underline-none{
+  text-decoration: none !important;
+
+}
+.ly-min-width{
+  min-width: 54.2% !important;
+  margin: 0px !important;
+  p{
+    width: 100% !important;
+  }
+}
+.lt-underline-none{
+      &:hover{
+    background-color: transparent !important;
+    color: #2983EC !important;
+  }
+
+}
+.lt-input-form{
+  padding: 0 10px 0 36px !important;
+  width: 100% !important;
+  height: 36px !important;
+  font-size: 15px !important;
+  color: #333 !important;
+}
+.lt-fntsze-15{
+  font-size: 15px ;
+}
+.lt-fntsze-14{
+  font-size: 14px ;
+  padding:8px 20px !important;
+}
+.navbar-link{
+  &:hover{
+    background-color: white !important;
+    color: #2983EC !important;
+  }
+}
+.lt-link{
+  &:hover{
+    background-color: white !important;
+    color: #2983EC !important;
+
+  }
+  a{
+
+    &:hover{
+      background-color: white !important;
+      color: #2983EC !important;
+    }
+  }
+}
+
+.lt-large {
+  padding: 0px !important;
+  font-size: 17px;
+  margin-top: 0.36rem !important;
+}
+a{
+  color: #000 !important;
+}
