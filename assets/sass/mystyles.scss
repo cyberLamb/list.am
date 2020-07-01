@@ -41,6 +41,7 @@ $input-placeholder-color:rgba(51,3,0,.5);
 
 
 @import "../../node_modules/bulma/bulma";
+@import "mymixins";
 
 .lt-box-shadow {
   box-shadow: 0 1px 6px 1px rgba(0,0,0,0.06);
@@ -57,7 +58,7 @@ $input-placeholder-color:rgba(51,3,0,.5);
   }
 }
 .lt-underline-none{
-      &:hover{
+  &:hover{
     background-color: transparent !important;
     color: #2983EC !important;
   }
@@ -116,7 +117,7 @@ a{
 .lt-dropdown{
   display: none !important;
 
-  }
+}
 //.lt-main-dropdown:hover .lt-dropdown{
 //
 //      display: block !important;
@@ -144,17 +145,17 @@ a{
 //  position: fixed;
 //}
 .lt-between{
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.lt-rounded{
-  border-radius: 6px !important;
-  width: 174px;
-  height: 165px;
-  //background-size: 100% 100% !important;
-  object-fit: cover !important;
-}
+//.lt-rounded{
+//  border-radius: 6px !important;
+//  width: 174px;
+//  height: 165px;
+//  //background-size: 100% 100% !important;
+//  object-fit: cover !important;
+//}
 .lt-absolute{
   position: absolute;
 }
@@ -168,12 +169,12 @@ a{
   color:#0b62da !important;
   letter-spacing: 1px;
   &:hover{
-  color: #0c72ea !important;
+    color: #0c72ea !important;
   }
 }
 .lt-rounded-size{
   width: 114px !important;
-  //border-radius: 6px !important;
+  border-radius: 6px !important;
   object-fit: cover !important;
 }
 .lt-round-small{
@@ -185,6 +186,7 @@ a{
 }
 .lt-auto{
   margin: 10px auto !important;
+  @include  lt-big()
 }
 
 .lt-width{
@@ -200,14 +202,15 @@ a{
   -webkit-box-orient: vertical;
 }
 
-.lt-198{
-  width: 198px !important;
-}
-.lt-auto-flex{
-  display: flex !important;
-  justify-content: center !important;
-}
+//.lt-198{
+//  width: 198px !important;
+//}
+//.lt-auto-flex{
+//  display: flex !important;
+//  justify-content: center !important;
+//}
 .lt-hover{
+  @include  lt-big();
   >a{
     img{
       transition: .5s;
@@ -223,18 +226,156 @@ a{
 
 }
 
-.lt-big-card{
-  width: 280px;
-  min-width: 280px;
-  //height: 225px;
-  border-radius: 6px;
-  transition: all .2s;
-  object-fit: cover;
-}
 .lt-big-main{
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+a{
   width: 280px;
-  border-radius: 6px;
+  img{
+    transition: all .2s;
+
+    @include Cards(10px, 280px,220px);
+    @include lt-big()
+  }
+
+}
+
+}
+//.lt-big-main{
+//  position: relative;
+//  display: inline-block;
+//  overflow: hidden;
+//  width: 280px;
+//  border-radius: 6px;
+//}
+.lt-main{
+  .lt-hover{
+
+    >a{
+      .column {
+      width: 198px ;
+      img{
+        @include Cards(6px,174px,165px)
+      }
+    }
+    }
+  }
+}
+
+footer{
+  .container{
+    .column{
+      a{
+        @include footer-font(12px)
+      }
+      .lt-link{
+        @include footer-mg(12px, 1px)
+      }
+    }
+  }
+}
+.lt-big{
+
+@include mg(60px 0px 40px);
+  .columns{
+    .column{
+      a{
+        img{
+          transition: .5s;
+        }
+        &:hover{
+          filter:brightness(115%);
+        }
+      }
+    }
+    >div{
+      @include lt-big()
+    }
+  }
+}
+
+//.is-family-sans-serif{
+//  .navbar-menu{
+//    a{
+//      &:hover{
+//        &:after{
+//          content: '';
+//          //opacity: 1;
+//          background-color: rgba(0,0,0,.5);
+//          //background-size: 100% 100%;
+//          z-index: 100;
+//          left: 0;
+//          right: 0;
+//          //top: 0;
+//          bottom: 0;
+//          position: relative;
+//          width: 100%;
+//          //height: 100%;
+//        }
+//
+//
+//      }
+//    }
+//  }
+//}
+
+
+
+ //.lt-rgba{
+ //  opacity: 0;
+ //  background-color: rgba(0,0,0,.5);
+ //  background-size: 100% 100%;
+ //  z-index: 100;
+ //  //left: 0;
+ //  //right: 0;
+ //  //top: 0;
+ //  //bottom: 0;
+ //  position: absolute;
+ //  width: 100%;
+ //  height: 100vh;
+ //}
+//body{
+//    .has-dropdown{
+//
+//    }
+//  }
+
+
+
+
+.lt-menu-hover{
+  &:hover{
+
+      &:after{
+        content: '';
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        //top: 0;
+        //display: block;
+        overflow: hidden;
+        //width: 100vh;
+        //height: 100vh;
+        background-color: #000;
+        opacity: .4;
+      }
+  }
+}
+
+#overlay {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 102px;
+  display: none;
+  overflow: hidden;
+  //width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
+}
+header{
+  z-index: 100000000000000;
 }

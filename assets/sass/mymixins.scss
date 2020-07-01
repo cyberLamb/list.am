@@ -1,0 +1,28 @@
+@mixin Cards($radius, $w,$h){
+  border-radius: $radius;
+  width: $w;
+  height: $h;
+  object-fit: cover;
+}
+
+@mixin footer-mg($m-left, $letter){
+  margin: {
+    left: $m-left
+  }
+  letter-spacing: $letter;
+
+}
+@mixin footer-font($size){
+  font: {
+    size: $size;
+  };
+
+}
+@mixin lt-big(){
+  display: flex;
+  justify-content: center;
+
+}
+@mixin mg($margin){
+  margin: $margin
+}
