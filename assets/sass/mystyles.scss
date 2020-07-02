@@ -103,6 +103,7 @@ $input-placeholder-color:rgba(51,3,0,.5);
   padding: 0px !important;
   font-size: 17px;
   margin-top: 0.36rem !important;
+  color: #999!important;
 }
 a{
   color: #000 !important;
@@ -210,7 +211,7 @@ a{
 //  justify-content: center !important;
 //}
 .lt-hover{
-  @include  lt-big();
+  @include  lt-big() ;
   >a{
     img{
       transition: .5s;
@@ -342,6 +343,7 @@ footer{
 
 
 .lt-menu-hover{
+    @include lt-big();
   &:hover{
 
       &:after{
@@ -368,7 +370,7 @@ footer{
   left: 0;
   bottom: 0;
   right: 0;
-  top: 102px;
+  top: 115px;
   display: none;
   overflow: hidden;
   //width: 100%;
@@ -376,6 +378,32 @@ footer{
   background-color: #000;
   opacity: .4;
 }
+//#click{
+//  display: none;
+//}
 header{
-  z-index: 100000000000000;
+  z-index: 100000;
+}
+.lt-content{
+  display: none;
+}
+.show{
+  display: block;
+
+}
+@media  (max-width: 1024px) {
+
+  .main{
+    .columns{
+     display: flex;
+      flex-wrap: wrap !important;
+      .column{
+        padding: 0 ;
+        margin: 0 0 15px 0;
+        flex-grow:  2;
+
+      }
+    }
+  }
+
 }

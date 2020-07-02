@@ -37,3 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+function myFunction(element) {
+    element.nextElementSibling.classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    console.log(event);
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("lt-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
