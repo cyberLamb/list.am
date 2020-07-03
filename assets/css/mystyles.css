@@ -7400,4 +7400,8 @@ header {
     .main .columns .column {
       padding: 0;
       margin: 0 0 15px 0;
-      flex-grow: 2; } }
+      flex-grow: 2; }
+  .lt-width {
+    display: none; }
+  .menu-icon i {
+    display: none; } }
