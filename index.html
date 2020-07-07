@@ -15,505 +15,531 @@
 
 <!--         navbar band num 1-->
 
-    <nav class="navbar " role="navigation" aria-label="main navigation">
-        <div class="container is-widescreen">
-            <div class="navbar-brand">
-                <a class="navbar-item " href="index.html" >
-                    <img src="assets/list-am.png" width="120" height="22">
-                </a>
-<!--  responsive burger  -->
+   <div class="container">
 
-                <a role="button"  class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+       <nav class="navbar " role="navigation" aria-label="main navigation">
 
-            </div>
+           <div class="container is-widescreen">
+               <div class="navbar-brand">
+                   <!--  responsive burger  -->
+                   <a role="button"  class="navbar-burger  burger is-left ml-1 "  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                       <span aria-hidden="true" class="has-text-info" style="height: 2px; width: 20px; "></span>
+                       <span aria-hidden="true"  class="has-text-info" style="height: 2px; width: 20px;" ></span>
+                       <span aria-hidden="true"  class="has-text-info" style="height: 2px; width: 20px;"></span>
+                   </a>
+                   <a class="navbar-item " href="index.html" >
+                       <img src="assets/list-am.png" width="120" height="22">
+                   </a>
 
+                   <p class=" control has-icons-left">
+                       <input class="px-7  ml-2 mt-3 lt-input-form my-2 is-rounded input is-bold " type="text" placeholder="Որոնում"  >
+                       <span class="ml-2 my-3 icon is-left">
+                            <i class=" fas fa-search" aria-hidden="true"></i>
+                        </span>
+                   </p>
 
-            <div class="navbar-menu is-hidden-desktop "  aria-expanded="false" id="navbarBasicExample" data-target="navbarBasicExample">
-
-                <div class="navbar-item has-text-centered py-0 navbar-dropdown  ">
-                    <a class="navbar-link is-arrowless pl-0 has-text-weight-semibold dropbtn" onclick="myFunction(this)">
-                        Բոլոր բաժինները
-
-                    </a>
-
-                    <div class="navbar-dropdown + py-0 lt-link lt-content show  " id="click">
-                        <div class=" is-arrowless  lt-main-dropdown " >
-
-                            <a class=" navbar-item ">
-                                Անշարժ գույք
-                            </a>
+                   <span class="icon is-right has-text-info">
+                            <i class="fas fa-user " aria-hidden="true"></i>
+                   </span>
+               </div>
 
 
-<!--                            <div class="navbar-dropdown  is-rounded is-shadowless" style="margin-left: 175px; position:absolute; top: 0;">-->
+               <div class="navbar-menu is-hidden-desktop "  aria-expanded="false" id="navbarBasicExample" data-target="navbarBasicExample">
 
-<!--                                <a class="">-->
-<!--                                    <div class="lt-withinDropdown ">-->
-<!--                                        <a href="" class="navbar-item">-->
-<!--                                            About-->
-<!--                                        </a>-->
-<!--                                        <div class="lt-withinDropdownHover  is-shadowless navbar-dropdown" style="margin-left: 175px; top: 0px;">-->
-<!--                                            <a class="navbar-item">-->
-<!--                                                Jobs-->
-<!--                                            </a>-->
-<!--                                            <a class="navbar-item">-->
-<!--                                                Contact-->
-<!--                                            </a>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                                <a class="navbar-item">-->
-<!--                                    Jobs-->
-<!--                                </a>-->
-<!--                                <a class="navbar-item">-->
-<!--                                    Contact-->
-<!--                                </a>-->
-<!--                                <hr class="navbar-divider">-->
-<!--                                <a class="navbar-item">-->
-<!--                                    Report an issue-->
-<!--                                </a>-->
+                   <div class="navbar-item   px-2 navbar-dropdown lt-letterSpaceing ">
+                       <a class="navbar-link is-arrowless   has-text-weight-light dropbtn" onclick="myFunction(this)">
+                           Բոլոր բաժինները
+
+                       </a>
+
+                       <div class="navbar-dropdown + py-0 lt-link lt-content show  " id="click">
+                           <div class=" is-arrowless  lt-main-dropdown " >
+
+                               <a class=" navbar-item ">
+                                   Անշարժ գույք
+                               </a>
 
 
+                               <!--                            <div class="navbar-dropdown  is-rounded is-shadowless" style="margin-left: 175px; position:absolute; top: 0;">-->
+
+                               <!--                                <a class="">-->
+                               <!--                                    <div class="lt-withinDropdown ">-->
+                               <!--                                        <a href="" class="navbar-item">-->
+                               <!--                                            About-->
+                               <!--                                        </a>-->
+                               <!--                                        <div class="lt-withinDropdownHover  is-shadowless navbar-dropdown" style="margin-left: 175px; top: 0px;">-->
+                               <!--                                            <a class="navbar-item">-->
+                               <!--                                                Jobs-->
+                               <!--                                            </a>-->
+                               <!--                                            <a class="navbar-item">-->
+                               <!--                                                Contact-->
+                               <!--                                            </a>-->
+                               <!--                                        </div>-->
+                               <!--                                    </div>-->
+                               <!--                                </a>-->
+                               <!--                                <a class="navbar-item">-->
+                               <!--                                    Jobs-->
+                               <!--                                </a>-->
+                               <!--                                <a class="navbar-item">-->
+                               <!--                                    Contact-->
+                               <!--                                </a>-->
+                               <!--                                <hr class="navbar-divider">-->
+                               <!--                                <a class="navbar-item">-->
+                               <!--                                    Report an issue-->
+                               <!--                                </a>-->
 
 
-<!--                            </div>-->
-                        </div>
 
 
-                        <a class="navbar-item">
-                            Տրանսպորտ
-                        </a>
-                        <a class="navbar-item">
-                            Էլեկտրոնիկա
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Կենցաղային տեխնիկա
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown py-0 has-text-centered is-hoverable " >
-                    <a class="navbar-link has-text-weight-semibold is-arrowless  dropbtn "  onclick="myFunction(this)" >
-
-                        Անշարժ գույք
-                    </a>
-
-                    <div class="navbar-dropdown   lt-content show" >
-                        <a class="navbar-item is-bold">
-                            Վաճառք
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Բնակարաններ
-                        </a>
-                        <a class="navbar-item">
-                            Տներ
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-text-centered py-0 has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless dropbtn"  onclick="myFunction(this)">
-                        Տրանսպորտ
-                    </a>
-
-                    <div class="navbar-dropdown  lt-content show">
-                        <a class="navbar-item">
-                            Ավտոմեքենաներ
-                        </a>
-                        <a class="navbar-item">
-                            Մոտոցիկլներ
-                        </a>
-                        <a class="navbar-item">
-                            Հեծանիվներ
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                           Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown py-0 has-text-centered is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless dropbtn"  onclick="myFunction(this)">
-                        Էլեկտրոնիկա
-                    </a>
-
-                    <div class="navbar-dropdown py-0  lt-content show">
-                        <a class="navbar-item">
-                            Հեռախոսներ և կապ
-                        </a>
-                        <a class="navbar-item">
-                            Համակարգիչներ
-                        </a>
-                        <a class="navbar-item">
-                            Ֆոտո և Վիդեոտեխնիկա
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown py-0 has-text-centered is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless  dropbtn"   onclick="myFunction(this)">
-                        Ծառայություններ
-                    </a>
-
-                    <div class="navbar-dropdown py-0 lt-content show ">
-                        <a class="navbar-item">
-                            Կրթություն
-                        </a>
-                        <a class="navbar-item">
-                            Բիզնես ծառայություններ
-                        </a>
-                        <a class="navbar-item">
-                            Կենցաղային ծառայություններ
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdownpy-0 py-0 has-text-centered is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless dropbtn"  onclick="myFunction(this)">
-                        Աշխատանք
-                    </a>
-
-                    <div class="navbar-dropdown py-0 lt-content show ">
-                        <a class="navbar-item">
-                            Գրասենյակային աշխատանք
-                        </a>
-                        <a class="navbar-item">
-                            Ֆինանսներ և իրավունք
-                        </a>
-                        <a class="navbar-item">
-                            Մեդիա և դիզայն
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item  py-0 has-text-centered py-0 has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless dropbtn" onclick="myFunction(this)">
-                        Նորաձևություն եւ ոճ
-                    </a>
-
-                    <div class="navbar-dropdown py-0 lt-content  show">
-                        <a class="navbar-item">
-                            Կանացի հագուստ
-                        </a>
-                        <a class="navbar-item">
-                            Կոսմետիկա
-                        </a>
-                        <a class="navbar-item">
-                            Օծանելիք
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-text-centered   py-0 has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-weight-semibold is-arrowless dropbtn"  onclick="myFunction(this)">
-                        Ամեն ինչ տան համար
-                    </a>
-
-                    <div class="navbar-dropdown py-0  lt-content show">
-                        <a class="navbar-item">
-                            Կահույք
-                        </a>
-                        <a class="navbar-item">
-                            Ինտերիյերի իրեր
-                        </a>
-                        <a class="navbar-item">
-                            Լուսավորություն
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Այլ
-                        </a>
-                    </div>
-                </div>
+                               <!--                            </div>-->
+                           </div>
 
 
-            </div>
+                           <a class="navbar-item">
+                               Տրանսպորտ
+                           </a>
+                           <a class="navbar-item">
+                               Էլեկտրոնիկա
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Կենցաղային տեխնիկա
+                           </a>
+                       </div>
+                   </div>
 
-<!--            search and icon menu -->
-            <div  class="navbar-menu">
-                <div class="navbar-start ly-min-width ">
-                    <p class=" control has-icons-left   ">
-                        <input class="px-7  ml-2 mt-3 lt-input-form  my-2 is-rounded input is-bold " type="text" placeholder="Որոնում"  >
-                        <span class="ml-2 my-3 icon is-left">
+                   <hr>
+                   <div class="navbar-item has-dropdown  px-2  is-hoverable " >
+                       <a class="navbar-link is-arrowless  dropbtn lt-letterSpaceing"  onclick="myFunction(this)" >
+
+                           Անշարժ գույք
+                       </a>
+
+                       <div class="navbar-dropdown   lt-content show" >
+                           <a class="navbar-item is-bold">
+                               Վաճառք
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Բնակարաններ
+                           </a>
+                           <a class="navbar-item">
+                               Տներ
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+
+                   <hr>
+
+                   <div class="navbar-item   px-2 has-dropdown lt-letterSpaceing is-hoverable">
+                       <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
+                           Տրանսպորտ
+                       </a>
+
+                       <div class="navbar-dropdown  lt-content show">
+                           <a class="navbar-item">
+                               Ավտոմեքենաներ
+                           </a>
+                           <a class="navbar-item">
+                               Մոտոցիկլներ
+                           </a>
+                           <a class="navbar-item">
+                               Հեծանիվներ
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+                   <hr>
+
+                   <div class="navbar-item has-dropdown  px-2 is-hoverable">
+                       <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
+                           Էլեկտրոնիկա
+                       </a>
+                       <div class="navbar-dropdown py-0  lt-content show">
+                           <a class="navbar-item">
+                               Հեռախոսներ և կապ
+                           </a>
+                           <a class="navbar-item">
+                               Համակարգիչներ
+                           </a>
+                           <a class="navbar-item">
+                               Ֆոտո և Վիդեոտեխնիկա
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+
+                   <hr>
+
+                   <div class="navbar-item has-dropdown  px-2 is-hoverable">
+                       <a class="navbar-link is-arrowless  dropbtn lt-letterSpaceing"   onclick="myFunction(this)">
+                           Ծառայություններ
+                       </a>
+
+                       <div class="navbar-dropdown py-0 lt-content show ">
+                           <a class="navbar-item">
+                               Կրթություն
+                           </a>
+                           <a class="navbar-item">
+                               Բիզնես ծառայություններ
+                           </a>
+                           <a class="navbar-item">
+                               Կենցաղային ծառայություններ
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+
+                   <hr>
+
+                   <div class="navbar-item has-dropdownpy-0  px-2  is-hoverable">
+                       <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
+                           Աշխատանք
+                           <span class="icon  is-pulled-right"  >
+                                 <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                           </span>
+                       </a>
+
+                       <div class="navbar-dropdown py-0 lt-content show ">
+                           <a class="navbar-item">
+                               Գրասենյակային աշխատանք
+                           </a>
+                           <a class="navbar-item">
+                               Ֆինանսներ և իրավունք
+                           </a>
+                           <a class="navbar-item">
+                               Մեդիա և դիզայն
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+                   <hr>
+
+                   <div class="navbar-item  px-2 has-dropdown is-hoverable">
+                       <a class="navbar-link  is-arrowless dropbtn lt-letterSpaceing" onclick="myFunction(this)">
+                           Նորաձևություն եւ ոճ
+                       </a>
+
+                       <div class="navbar-dropdown py-0 lt-content  show">
+                           <a class="navbar-item">
+                               Կանացի հագուստ
+                           </a>
+                           <a class="navbar-item">
+                               Կոսմետիկա
+                           </a>
+                           <a class="navbar-item">
+                               Օծանելիք
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+
+                   <hr >
+
+                   <div class="navbar-item   px-2 has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
+                           Ամեն ինչ տան համար
+                       </a>
+
+                       <div class="navbar-dropdown py-0  lt-content show">
+                           <a class="navbar-item">
+                               Կահույք
+                           </a>
+                           <a class="navbar-item">
+                               Ինտերիյերի իրեր
+                           </a>
+                           <a class="navbar-item">
+                               Լուսավորություն
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Այլ
+                           </a>
+                       </div>
+                   </div>
+               </div>
+
+               <!--            search and icon menu -->
+               <div  class="navbar-menu">
+                   <div class="navbar-start ly-min-width ">
+                       <p class=" control has-icons-left   ">
+                           <input class="px-7  ml-2 mt-3 lt-input-form  my-2 is-rounded input is-bold " type="text" placeholder="Որոնում"  >
+                           <span class="ml-2 my-3 icon is-left">
                          <i class=" fas fa-search" aria-hidden="true"></i>
 
                     </span>
-                    </p>
-                </div>
-<!--   navbar end-->
-                <div class="navbar-end">
-                    <div class="navbar-item pr-0">
-                        <div class="buttons mr-4">
-                            <a class="button is-text lt-underline-none mb-1 lt-fntsze-15">Իմ էջը</a>
-                            <a class="button is-primary is-rounded lt-fntsze-14 mt-1 has-text-white">
-                                Ավելացնել հայտարարություն
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+                       </p>
+                   </div>
+                   <!--   navbar end-->
+                   <div class="navbar-end">
+                       <div class="navbar-item pr-0">
+                           <div class="buttons mr-4">
+                               <a class="button is-text lt-underline-none mb-1 lt-fntsze-15">Իմ էջը</a>
+                               <a class="button is-primary is-rounded lt-fntsze-14 mt-1 has-text-white">
+                                   Ավելացնել հայտարարություն
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
 
-<!--     wrap menu with dropdowns-->
-<div class="navbar-menu  mt-1">
-    <div class="container-toggle lt-auto is-family-sans-serif lt-letterSpaceing">
+       </nav>
 
-        <div class="navbar-menu">
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <span class="icon lt-large has-text-dark ">
-                    <i class="fas fa-bars "></i>
-                </span>
-                <a class="navbar-link is-arrowless pl-0 ">
-                    Բոլոր բաժինները
-                </a>
 
-                <div class="navbar-dropdown lt-link ">
-                    <div class=" is-arrowless  lt-main-dropdown is-hoverable">
+       <!--     wrap menu with dropdowns-->
+       <div class="navbar-menu  mt-1">
+           <div class="container-toggle  lt-auto is-family-sans-serif lt-letterSpaceing">
 
-                        <a class=" navbar-item lt-hover">
-                            Անշարժ գույք
+               <div class="navbar-menu">
+
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                        <span class="icon lt-large has-text-dark ">
+                            <i class="fas fa-bars "></i>
+                        </span>
+                        <a class="navbar-link is-arrowless pl-0 ">
+                           Բոլոր բաժինները
                         </a>
-                        <span class="icon   " style="position: absolute; right: 0;top: 12px;color: #c3bdbd ">
-                            <i class="fas fa-chevron-right"></i>
+
+                        <div class="navbar-dropdown lt-link ">
+                            <div class=" is-arrowless  lt-main-dropdown is-hoverable">
+
+                               <a class=" navbar-item lt-hover">
+                                   Անշարժ գույք
+                               </a>
+                               <span class="icon   " style="position: absolute; right: 0;top: 12px;color: #c3bdbd ">
+                               <i class="fas fa-chevron-right"></i>
                         </span>
 
-                        <div class="navbar-dropdown lt-dropdown is-rounded is-shadowless" style="margin-left: 175px; position:absolute; top: 0;">
+                       <div class="navbar-dropdown lt-dropdown is-rounded is-shadowless" style="margin-left: 175px; position:absolute; top: 0;">
+                           <a class="">
+                               <div class="lt-withinDropdown ">
+                                   <a href="" class="navbar-item">
+                                       About
+                                   </a>
+                                   <div class="lt-withinDropdownHover  is-shadowless navbar-dropdown" style="margin-left: 175px; top: 0px;">
+                                       <a class="navbar-item">
+                                           Jobs
+                                       </a>
+                                       <a class="navbar-item">
+                                           Contact
+                                       </a>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
 
-                                <a class="">
-                                    <div class="lt-withinDropdown ">
-                                        <a href="" class="navbar-item">
-                                            About
-                                        </a>
-                                        <div class="lt-withinDropdownHover  is-shadowless navbar-dropdown" style="margin-left: 175px; top: 0px;">
-                                            <a class="navbar-item">
-                                                Jobs
-                                            </a>
-                                            <a class="navbar-item">
-                                                Contact
-                                            </a>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="navbar-item">
-                                    Jobs
-                                </a>
-                                <a class="navbar-item">
-                                    Contact
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item">
-                                    Report an issue
-                                </a>
-
-
-
-
-                        </div>
-                    </div>
+                       </div>
+                   </div>
 
 
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
 
-                    Անշարժ գույք
-                </a>
+                           Անշարժ գույք
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Տրանսպորտ
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Տրանսպորտ
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Էլեկտրոնիկա
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Էլեկտրոնիկա
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Ծառայություններ
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Ծառայություններ
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Աշխատանք
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Աշխատանք
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Նորաձևություն եւ ոճ
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Նորաձևություն եւ ոճ
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
-            <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Ամեն ինչ տան համար
-                </a>
+                   <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
+                       <a class="navbar-link is-arrowless">
+                           Ամեն ինչ տան համար
+                       </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
+                       <div class="navbar-dropdown">
+                           <a class="navbar-item">
+                               About
+                           </a>
+                           <a class="navbar-item">
+                               Jobs
+                           </a>
+                           <a class="navbar-item">
+                               Contact
+                           </a>
+                           <hr class="navbar-divider">
+                           <a class="navbar-item">
+                               Report an issue
+                           </a>
+                       </div>
+                   </div>
 
 
-    </div>
-</div>
+               </div>
+
+
+           </div>
+       </div>
+
+
+
+   </div>
 
 
 
@@ -523,9 +549,12 @@
 
 
 
-<div class="container column  lt-auto">
-    <img src="assets/orig.jpg" class="my-1  lt-width" alt="">
+<div class="columns is-centered">
+    <div class="column  is-half px-0 " style="text-align: center">
+        <img src="assets/orig.jpg" class="my-2" alt="">
+    </div>
 </div>
+
 
 
 <div class="main ">
@@ -1032,10 +1061,13 @@
 
             <div class="column px-0">
                 <a href="https://jgthms.com" class="is-danger">© 2005-2020 List.am</a>
-            <div class=" is-inline-flex  is-pulled-right	">
-                <a href="http://opensource.org/licenses/mit-license.php" class="lt-link">Տեղեկանք</a>
-                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link">Հետադարձ կապ</a>.
-                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link">Օգտագործման համաձայնագիր</a>.
+            <div class=" is-flex  is-wrap is-pulled-right	">
+<!--                <div class="row">-->
+                    <a href="http://opensource.org/licenses/mit-license.php" class="lt-link ">Տեղեկանք</a>
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link ">Հետադարձ կապ</a>.
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link ">Օգտագործման համաձայնագիր</a>.
+                </div>
+
             </div>
 
             </div>

@@ -192,7 +192,7 @@ a{
 
 .lt-width{
   width: 728px !important;
-  height: 90px !important;
+  height: 100px !important;
   //margin: 20px 18% !important;
 }
 .lt-subtitle{
@@ -227,17 +227,20 @@ a{
 
 }
 
-.lt-big-main{
-a{
-  width: 280px;
-  img{
-    transition: all .2s;
+.lt-big-main {
+  a {
+    width: 280px;
+    img {
+      transition: all .2s;
 
-    @include Cards(10px, 280px,220px);
-    @include lt-big()
+      @include cards(10px, 280px,220px);
+      @include lt-big()
+    }
+
+    @include until($tablet) {
+
+    }
   }
-
-}
 
 }
 //.lt-big-main{
@@ -254,7 +257,7 @@ a{
       .column {
       width: 198px ;
       img{
-        @include Cards(6px,174px,165px)
+        @include cards(6px,174px,165px)
       }
     }
     }
@@ -292,55 +295,6 @@ footer{
     }
   }
 }
-
-//.is-family-sans-serif{
-//  .navbar-menu{
-//    a{
-//      &:hover{
-//        &:after{
-//          content: '';
-//          //opacity: 1;
-//          background-color: rgba(0,0,0,.5);
-//          //background-size: 100% 100%;
-//          z-index: 100;
-//          left: 0;
-//          right: 0;
-//          //top: 0;
-//          bottom: 0;
-//          position: relative;
-//          width: 100%;
-//          //height: 100%;
-//        }
-//
-//
-//      }
-//    }
-//  }
-//}
-
-
-
- //.lt-rgba{
- //  opacity: 0;
- //  background-color: rgba(0,0,0,.5);
- //  background-size: 100% 100%;
- //  z-index: 100;
- //  //left: 0;
- //  //right: 0;
- //  //top: 0;
- //  //bottom: 0;
- //  position: absolute;
- //  width: 100%;
- //  height: 100vh;
- //}
-//body{
-//    .has-dropdown{
-//
-//    }
-//  }
-
-
-
 
 .lt-menu-hover{
     @include lt-big();
@@ -391,6 +345,21 @@ header{
   display: block;
 
 }
+
+.navbar-brand {
+  p{
+    width: 100%;
+    margin-right: 1rem;
+    display: none;
+    @include until($desktop){
+      display: block;
+    }
+  }
+}
+
+
+
+
 @media  (max-width: 1024px) {
 
   .main{
@@ -411,5 +380,51 @@ header{
   }
   .menu-icon i{
     display: none;
+  }
+  #overlay{
+    display: none;
+  }
+  footer{
+    .is-wrap {
+      display: flex;
+      flex-wrap: wrap ;
+      justify-content: center ;
+
+      a{
+        //display: flex;
+        min-width: 205px;
+
+      }
+
+    }
+  }
+
+  .navbar-brand{
+      .navbar-item{
+        padding: 0 !important;
+        img{
+          display: none;
+        }
+      }
+    }
+
+
+  footer{
+    .container{
+      text-align: center;
+    }
+  }
+
+  .lt-d-block
+  {
+    display: block;
+    width: 100%;
+    margin-right: 100px;
+  }
+  .lt-allPosts{
+    display: none;
+  }
+  .title{
+      text-align: center;
   }
 }

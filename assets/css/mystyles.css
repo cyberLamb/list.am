@@ -7304,7 +7304,7 @@ a {
 
 .lt-width {
   width: 728px !important;
-  height: 90px !important; }
+  height: 100px !important; }
 
 .lt-subtitle {
   overflow: hidden;
@@ -7393,6 +7393,14 @@ header {
 .show {
   display: block; }
 
+.navbar-brand p {
+  width: 100%;
+  margin-right: 1rem;
+  display: none; }
+  @media screen and (max-width: 1023px) {
+    .navbar-brand p {
+      display: block; } }
+
 @media (max-width: 1024px) {
   .main .columns {
     display: flex;
@@ -7404,4 +7412,26 @@ header {
   .lt-width {
     display: none; }
   .menu-icon i {
-    display: none; } }
+    display: none; }
+  #overlay {
+    display: none; }
+  footer .is-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    footer .is-wrap a {
+      min-width: 205px; }
+  .navbar-brand .navbar-item {
+    padding: 0 !important; }
+    .navbar-brand .navbar-item img {
+      display: none; }
+  footer .container {
+    text-align: center; }
+  .lt-d-block {
+    display: block;
+    width: 100%;
+    margin-right: 100px; }
+  .lt-allPosts {
+    display: none; }
+  .title {
+    text-align: center; } }
