@@ -28,18 +28,22 @@
                        <span aria-hidden="true"  class="has-text-info" style="height: 2px; width: 20px;"></span>
                    </a>
                    <a class="navbar-item " href="index.html" >
-                       <img src="assets/list-am.png" width="120" height="22">
+                       <img src="assets/list-am.png" width="120" height="22" alt="">
                    </a>
 
                    <p class=" control has-icons-left">
-                       <input class="px-7  ml-2 mt-3 lt-input-form my-2 is-rounded input is-bold " type="text" placeholder="Որոնում"  >
+                       <label>
+                           <input class="px-7  ml-2 mt-3 lt-input-form my-2 is-rounded input is-bold " type="text" placeholder="Որոնում"  >
+                       </label>
                        <span class="ml-2 my-3 icon is-left">
                             <i class=" fas fa-search" aria-hidden="true"></i>
                         </span>
                    </p>
 
-                   <span class="icon is-right has-text-info">
-                            <i class="fas fa-user " aria-hidden="true"></i>
+                   <span class="icon is-right ">
+                       <a href="login.html" class="has-text-info" target="_blank">
+                          <i class="far fa-user fa-2x "></i>
+                       </a>
                    </span>
                </div>
 
@@ -49,6 +53,9 @@
                    <div class="navbar-item   px-2 navbar-dropdown lt-letterSpaceing ">
                        <a class="navbar-link is-arrowless   has-text-weight-light dropbtn" onclick="myFunction(this)">
                            Բոլոր բաժինները
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
 
                        </a>
 
@@ -111,8 +118,10 @@
                    <hr>
                    <div class="navbar-item has-dropdown  px-2  is-hoverable " >
                        <a class="navbar-link is-arrowless  dropbtn lt-letterSpaceing"  onclick="myFunction(this)" >
-
                            Անշարժ գույք
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
 
                        <div class="navbar-dropdown   lt-content show" >
@@ -138,6 +147,9 @@
                    <div class="navbar-item   px-2 has-dropdown lt-letterSpaceing is-hoverable">
                        <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
                            Տրանսպորտ
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
 
                        <div class="navbar-dropdown  lt-content show">
@@ -161,6 +173,9 @@
                    <div class="navbar-item has-dropdown  px-2 is-hoverable">
                        <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
                            Էլեկտրոնիկա
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
                        <div class="navbar-dropdown py-0  lt-content show">
                            <a class="navbar-item">
@@ -184,6 +199,9 @@
                    <div class="navbar-item has-dropdown  px-2 is-hoverable">
                        <a class="navbar-link is-arrowless  dropbtn lt-letterSpaceing"   onclick="myFunction(this)">
                            Ծառայություններ
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
 
                        <div class="navbar-dropdown py-0 lt-content show ">
@@ -208,8 +226,8 @@
                    <div class="navbar-item has-dropdownpy-0  px-2  is-hoverable">
                        <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
                            Աշխատանք
-                           <span class="icon  is-pulled-right"  >
-                                 <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
                            </span>
                        </a>
 
@@ -234,6 +252,9 @@
                    <div class="navbar-item  px-2 has-dropdown is-hoverable">
                        <a class="navbar-link  is-arrowless dropbtn lt-letterSpaceing" onclick="myFunction(this)">
                            Նորաձևություն եւ ոճ
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
 
                        <div class="navbar-dropdown py-0 lt-content  show">
@@ -258,6 +279,9 @@
                    <div class="navbar-item   px-2 has-dropdown is-hoverable">
                        <a class="navbar-link is-arrowless dropbtn lt-letterSpaceing"  onclick="myFunction(this)">
                            Ամեն ինչ տան համար
+                           <span class="icon  is-pulled-right has-text-grey-light"  >
+                                 <i class="fas fa-chevron-down " aria-hidden="true"></i>
+                           </span>
                        </a>
 
                        <div class="navbar-dropdown py-0  lt-content show">
@@ -293,8 +317,8 @@
                    <div class="navbar-end">
                        <div class="navbar-item pr-0">
                            <div class="buttons mr-4">
-                               <a class="button is-text lt-underline-none mb-1 lt-fntsze-15">Իմ էջը</a>
-                               <a class="button is-primary is-rounded lt-fntsze-14 mt-1 has-text-white">
+                               <a class="button is-text lt-underline-none mb-1 ">Իմ էջը</a>
+                               <a class="button is-primary is-rounded  mt-1 has-text-white">
                                    Ավելացնել հայտարարություն
                                </a>
                            </div>
@@ -314,7 +338,7 @@
                <div class="navbar-menu">
 
                    <div class="navbar-item lt-menu-hover has-dropdown is-hoverable">
-                        <span class="icon lt-large has-text-dark ">
+                        <span class="icon  has-text-dark ">
                             <i class="fas fa-bars "></i>
                         </span>
                         <a class="navbar-link is-arrowless pl-0 ">
@@ -563,7 +587,7 @@
            <div class="column is-paddingless my-4" >
                   <span class="lt-between " >
                         <a href="#" class="title is-size-4 is-marginless has-text-weight-normal	"  >Հեռախոսներ</a>
-                        <a href="#" class="lt-allPosts">Բոլոր հայտարարությունները</a>
+                        <a href="#" class="">Բոլոր հայտարարությունները</a>
                   </span>
            </div>
             <div class="columns  lt-hover">
@@ -580,7 +604,7 @@
                 </a>
                 <a href="">
                     <div class="column ">
-                        <img src="assets/xiaomi2.webp" class="lt-rounded" alt="">
+                        <img src="assets/xiaomi2.webp" class="" alt="">
                         <div class="">
                             <div class="title is-size-6">384,000 ֏</div>
                             <div class="subtitle lt-subtitle is-size-6">
@@ -591,7 +615,7 @@
                 </a>
                 <a href="">
                     <div class="column ">
-                        <img src="assets/xiaomi3.webp" class="lt-rounded" alt="">
+                        <img src="assets/xiaomi3.webp" class="" alt="">
                         <div class="">
                             <div class="title is-size-6">49,000 ֏</div>
                             <div class="subtitle lt-subtitle is-size-6">
@@ -602,9 +626,9 @@
                 </a>
                 <a href="">
                     <div class="column ">
-                        <img src="assets/xiaomi4.webp" class="lt-rounded" alt="">
+                        <img src="assets/xiaomi4.webp" class="" alt="">
                         <div class="lt-absolute">
-                            <span class="button is-danger px-1 is-size-7 lt-relative"> Շտապ! </span>
+                            <span class="button is-danger px-1 is-size-7 "> Շտապ! </span>
                         </div>
                         <div class="">
                             <div class="title is-size-6">243,000 ֏</div>
@@ -616,7 +640,7 @@
                 </a>
                 <a href="">
                     <div class="column ">
-                        <img src="assets/xiaomi5.webp" class="lt-rounded" alt="" >
+                        <img src="assets/xiaomi5.webp" class="" alt="" >
                         <div class="">
                             <div class="title is-size-6">60,000 ֏</div>
                             <div class="subtitle lt-subtitle is-size-6 " >
@@ -627,7 +651,7 @@
                 </a>
                 <a href="">
                     <div class="column ">
-                        <img src="assets/xiaomi.webp" class="lt-rounded" alt="">
+                        <img src="assets/xiaomi.webp" class="" alt="">
                         <div class="">
                             <div class="title is-size-6">130,000 ֏</div>
                             <div class="subtitle lt-subtitle is-size-6">
@@ -636,10 +660,7 @@
                         </div>
                     </div>
                 </a>
-                
             </div>
-
-
         </div>
 
 <!--        second col-->
@@ -654,7 +675,7 @@
             <div class="columns lt-hover  mt-4 mb-6 ">
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines4.webp" class="mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img src="assets/bussines4.webp" class="mb-2    px-0 py-0 box" alt="">
                         <div class="">
 <!--                            <div class="title is-size-6">130,000 ֏</div>-->
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
@@ -665,7 +686,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines2.webp" class=" mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img src="assets/bussines2.webp" class=" mb-2  px-0 py-0 box" alt="">
                         <div class="">
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered">
                                 SMARTBOX. AM
@@ -675,7 +696,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines.webp" class="mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img src="assets/bussines.webp" class="mb-2  px-0 py-0 box" alt="">
                         <div class="">
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
                                 INTEX YEREVAN
@@ -685,7 +706,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines3.webp" class="mb-2 lt-round-small  lt-rounded-size px-0 py-0 box" alt="">
+                        <img src="assets/bussines3.webp" class="mb-2  px-0 py-0 box" alt="">
 
                         <div class="">
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered">
@@ -696,7 +717,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines5.webp" class="mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img src="assets/bussines5.webp" class="mb-2  px-0 py-0 box" alt="">
                         <div class="">
 
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
@@ -707,7 +728,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines6.webp" class="mb-2 lt-round-small lt-rounded-size px-0 py-0 box" alt="">
+                        <img src="assets/bussines6.webp" class="mb-2  px-0 py-0 box" alt="">
                         <div class="">
 
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
@@ -718,7 +739,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines8.webp" class="mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img src="assets/bussines8.webp" class="mb-2  px-0 py-0 box" alt="">
                         <div class="">
                             <!--                            <div class="title is-size-6">130,000 ֏</div>-->
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
@@ -729,7 +750,7 @@
                 </a>
                 <a href="">
                     <div class="column mx-4 lt-div-small  px-0 py-0  ">
-                        <img src="assets/bussines7.webp" class="mb-2 lt-round-small lt-rounded-size  px-0 py-0 box" alt="">
+                        <img alt="" class="mb-2  px-0 py-0 box" src="assets/bussines7.webp">
                         <div class="">
                             <!--                            <div class="title is-size-6">130,000 ֏</div>-->
                             <div class="subtitle lt-subtitle is-size-6 has-text-centered" >
@@ -739,11 +760,7 @@
                     </div>
                 </a>
             </div>
-
-
         </div>
-
-
 <!--        autospasarkum -->
 
         <div class="my-5  lt-main">
@@ -791,7 +808,7 @@
                     <div class="column ">
                         <img src="assets/xiaomi10.webp" class="lt-rounded" alt="">
                         <div class="lt-absolute">
-                            <span class="button is-danger px-1 is-size-7 lt-relative"> Շտապ! </span>
+                            <span class="button is-danger px-1 is-size-7 "> Շտապ! </span>
                         </div>
                         <div class="">
 <!--                            <div class="title is-size-6">130,000 ֏</div>-->
@@ -877,7 +894,7 @@
                     <div class="column ">
                         <img src="assets/xiaomi.webp" class="lt-rounded" alt="">
                         <div class="lt-absolute">
-                            <span class="button is-danger px-1 is-size-7 lt-relative"> Շտապ! </span>
+                            <span class="button is-danger px-1 is-size-7 "> Շտապ! </span>
                         </div>
                         <div class="">
                             <div class="title is-size-6">130,000 ֏</div>
@@ -922,36 +939,36 @@
 
 <div class="container lt-big">
     <div class="columns ">
-        <div class="column lt-big-main">
+        <div class="column ">
             <a href="">
                 <img src="assets/big1.webp"  class="" alt="">
                 <div class="py-3">
                     <div class="mb-1 " >
-                        <div class="title is-6 mb-2"> 110,000 ֏</div>
+                        <div class="title is-6 mb-2 has-text-left"> 110,000 ֏</div>
                         <div class="title has-text-weight-light is-6">Jeep / Մանկական էլեկտրոմոբիլ /</div>
                     </div>
                     <div class="is-7 lt-subtitle subtitle">Ունի հեռակառավարվող համակարգ, 4 x 4, Bluetooth համակարգ, ձայնային ազդանշան, ռադիո, 1 մարտկոց, 4 մատոռ։ Առկա են նաև այ...</div>
                 </div>
             </a>
         </div>
-        <div class="column lt-big-main">
+        <div class="column ">
             <a href="">
                 <img src="assets/big2.webp"  class="" alt="">
                 <div class="py-3">
                     <div class="mb-1 " >
-                        <div class="title is-6 mb-2"> 3,000 ֏</div>
+                        <div class="title is-6 mb-2 has-text-left"> 3,000 ֏</div>
                         <div class="title has-text-weight-light is-6">Սիզամարգի սերմ ստվերային DLF Johnsons Shady Place / Serm,...</div>
                     </div>
                     <div class="is-7 lt-subtitle subtitle">Սիզամարգի սերմ Անգլիական Johnsons ընկերությունից: Ծածկողականությունը 30-45 քառակուսի մետր: Նախատեսված է ստվերային տար...</div>
                 </div>
             </a>
         </div>
-        <div class="column lt-big-main">
+        <div class="column ">
             <a href="">
                 <img src="assets/big.webp"  class="" alt="">
                 <div class="py-3">
                     <div class="mb-1 " >
-                        <div class="title is-6 mb-2"> 85,000 ֏</div>
+                        <div class="title is-6 mb-2 has-text-left"> 85,000 ֏</div>
                         <div class="title has-text-weight-light is-6">Սղարան sxaran ճոճանակ</div>
                     </div>
                     <div class="is-7 lt-subtitle subtitle">Nor ev barzr voraki sxaraner</div>
@@ -961,12 +978,7 @@
     </div>
 
 </div>
-
-
-
 <!--        3th-->
-
-
         <div class=" my-0 lt-main">
             <div class="column is-paddingless my-4" >
                   <span class="lt-between " >
@@ -1012,7 +1024,7 @@
                     <div class="column ">
                         <img src="assets/xiaomi.webp" class="lt-rounded" alt="">
                         <div class="lt-absolute">
-                            <span class="button is-danger px-1 is-size-7 lt-relative"> Շտապ! </span>
+                            <span class="button is-danger px-1 is-size-7 "> Շտապ! </span>
                         </div>
                         <div class="">
                             <div class="title is-size-6">130,000 ֏</div>
@@ -1052,7 +1064,6 @@
 
         </div>
     </div>
-</div>
 
 
 <footer class="footer mt-6 px-0 py-0">
@@ -1076,7 +1087,6 @@
 
         </div>
 
-    </div>
 </footer>
     <script defer src="assets/js/main.js"></script>
 </body>
