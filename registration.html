@@ -17,46 +17,103 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item " href="index.html" >
-                    <img src="assets/list-am.png" width="120" height="22" alt="">
+                    <img src="assets/list-am.png" class="my-3" width="120" height="22" alt="">
                 </a>
             </div>
         </nav>
     </div>
 <!--    dropdown-->
 </header>
-    <div class="container">
-        <div class="main box">
+    <div class="container ">
+        <div class="main mt-6 box">
             <div class="subtitle is-size-6 has-text-centered"> Մուտք սոցիալական ցանցերի միջոցով</div>
-
+            <div class="columns is-centered ">
+                <div class="column is-2">
+                    <a href="#">
+                        <img src="assets/fb.webp" alt="">
+                    </a>
+                </div>
+                <div class="column is-2">
+                    <a href="">
+                        <img src="assets/google.webp" alt="">
+                    </a>
+                </div>
+                <div class="column is-2">
+                    <a href="">
+                        <img src="assets/mailru.webp" alt="">
+                    </a>
+                </div>
+                <div class="column is-2">
+                    <a href="">
+                        <img src="assets/vk.webp" alt="">
+                    </a>
+                </div>
+            </div>
             <div class="email">
                 <label class="label has-text-centered has-text-weight-light ">Կամ օգտագործեք Ձեր էլ. փոստի հասցեն</label>
-                <form action="">
-                    <div class="box is-shadowless mx-0 py-1 px-1">
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <label>
-                                    <input class="input py-0 px-4" type="email" placeholder="Ձեր Էլ. փոստի հասցեն">
-                                </label>
+                    <div class=" mx-0 py-1 px-1">
+                        <form action="">
+                            <div class="field mb-0">
+                                <div class="control has-icons-left has-icons-right">
+                                    <label>
+                                        <input class="input py-0 px-4" type="email" placeholder="Ձեր Էլ. փոստի հասցեն">
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-                        <hr class="my-0 py-0 mx-3">
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <label>
-                                    <input class="input py-0 px-4"  type="email" placeholder="Գաղտնաբառ">
-                                    <a href="" class="is-flex ">
-                                       Մոռացել եք?
-                                    </a>
-                                </label>
+                            <hr class="my-0 py-0 mx-3">
+                            <div class="field">
+                                <div class="control has-icons-left has-icons-right">
+                                    <label>
+                                        <input class="input py-0 px-4"  type="email" placeholder="Գաղտնաբառ">
+                                        <a href="" class="is-flex ">
+                                           Մոռացել եք?
+                                        </a>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+
             </div>
-            <div class=" is-centered pt-6">
-                <a href="" class="column button is-rounded px-6 "> Մուտք</a>
+            <div class=" is-centered btn pt-4">
+                <button class="button" title="Disabled button" disabled>Մուտք</button>
+            </div>
+            <div class="columns ">
+                <div class="column  lt-btn mt-5 has-text-centered">
+                    Դեռ գրանցված չե՞ք
+                </div>
+            </div>
+            <div class="columns " >
+                <div class="column has-text-centered pb-5">
+                    <button class="button is-info is-outlined px-3 py-1">Գրանցում</button>
+                </div>
             </div>
         </div>
+
     </div>
+
+<!--  footer -->
+<footer class="footer mt-6 px-0 py-0">
+    <div class=" ">
+        <div class="container">
+
+            <div class="column px-0">
+                <a href="https://jgthms.com" class="is-danger">© 2005-2020 List.am</a>
+                <div class=" is-flex  is-wrap is-pulled-right	">
+                    <!--                <div class="row">-->
+                    <a href="http://opensource.org/licenses/mit-license.php" class="lt-link ">Տեղեկանք</a>
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link ">Հետադարձ կապ</a>.
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="lt-link ">Օգտագործման համաձայնագիր</a>.
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</footer>
 </body>
 </html>

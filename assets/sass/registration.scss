@@ -1,20 +1,58 @@
-
 .lt-registration-page{
   background-color: #f7f7f7;
-  .container{
-    .main{
-        a{
-          align-items: center;
+  header{
+    background-color: white;
+    nav{
+      .navbar-brand{
+        @include from($desktop) {
+          justify-content: center;
           display: flex;
         }
       }
+    }
+  }
+  .container{
+    .main{
+      .columns{
+
+        .column{
+          button{
+            width: 300px;
+            box-sizing: content-box;
+          }
+        }
+
+          a{
+            img{
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+
+      }
       width: 500px;
-      margin: 30px auto 0;
+      margin: 0 auto;
+      padding: 20px 50px;
+        .btn{
+          justify-content: center;
+          display: flex;
+          button{
+            //text-align: center;
+            color: #fff;
+            cursor: default;
+            background: #b9babd none;
+            border: none;
+            width: 360px;
+            border-radius: 25px;
+            padding: 10px 26px;
+          }
+        }
+      }
       .email{
-        .box{
+        >div{
           border: 1px solid #e2e2e2;
           border-radius: 6px;
-          width: 400px;
         }
         >label{
           font-size: 15px;
@@ -40,11 +78,9 @@
         }
       }
     }
-    nav{
-      .navbar-brand{
-        @include from($desktop) {
-          justify-content: center;
-        }
-      }
-    }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
   }
